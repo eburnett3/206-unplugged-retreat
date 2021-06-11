@@ -96,7 +96,9 @@ html {
 body {
   font-size: 1em;
   font-family: 'Open Sans', sans-serif;
+  color: #e2e3ed;
   text-align: left;
+  
 }
  
 ul, 
@@ -111,12 +113,14 @@ a {
  
 h2 {
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   font-size: 1.875em;
 }
  
 h3, 
 h4 {
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   margin: 20px 0;
   font-size: 1.125em;
 }
@@ -127,13 +131,22 @@ p {
 }
   
 address {
- font-style: normal;
+  font-style: normal;
 }
  
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
 }
+
+img { 
+	width: 100%;
+}
+ 
+figure {
+   margin: 0;
+}
+
 
 /* -------------------- Base Header - Footer Styles -------------------- */
 
@@ -186,6 +199,14 @@ header nav ul li {
   font-size: 1.125em;
 }
 
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 footer {
   text-align: center;
   flex-direction: column;
@@ -228,6 +249,9 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/Background.jpg') center no-repeat #333;
+  background-size: cover;
+  min-height: 500px;
 }
 
 .hero-area h1 {
@@ -279,6 +303,9 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url("../img/background-2.jpg") center no-repeat #333;
+  background-size: cover;
+
 }
 
 .features h2 {
@@ -514,6 +541,10 @@ input[type=button] {
     }
     /* Hero Area */
   
+    .hero-area {
+      min-height: 600px;
+    }
+
     .hero-area h1 {
       font-size: 3em;
       line-height: 1;
@@ -669,17 +700,17 @@ input[type=button] {
   
     h3,
     h4 {
-        font-size: 1.875em;
+      font-size: 1.875em;
     }
   
     p {
-        font-size: 1.125em;
-        line-height: 1.333;
+      font-size: 1.125em;
+      line-height: 1.333;
     }
     /* Hero */
     .hero-area h1 {
       font-size: 3.75em;
-      width: 60%;
+      width: 80%;
   }
   
     /* Aside */
@@ -726,8 +757,8 @@ input[type=button] {
   
     .mission h2,
     .contact-section .content-wrapper h2 {
-        width: 95%;
-        font-size: 3em;
+      width: 95%;
+      font-size: 3em;
     }
   
     .contact-content h4 {
@@ -744,8 +775,8 @@ input[type=button] {
       
     .faq h4,
     .faq p {
-        font-size: 1.125em;
-        line-height: 1;
+      font-size: 1.125em;
+      line-height: 1;
     }
   }
   
