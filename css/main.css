@@ -98,7 +98,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #e2e3ed;
   text-align: left;
-  
 }
  
 ul, 
@@ -300,12 +299,12 @@ input[type=button] {
 /* Features */
 
 .features {
+  background: url("../img/background-2.jpg");
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: url("../img/background-2.jpg") center no-repeat #333;
-  background-size: cover;
-
 }
 
 .features h2 {
@@ -327,6 +326,11 @@ input[type=button] {
 .features p {
   text-align: center;
   margin: 0;
+}
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 /* Reviews */
@@ -756,7 +760,7 @@ input[type=button] {
     .features article {
       flex-basis: 33%;
     }
-    
+
     /* Reviews */
   
     .reviews h2 {
